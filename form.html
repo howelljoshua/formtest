@@ -7,13 +7,14 @@
 			var r = str.indexOf('=')+16;
 			var sfid = str.substring(l, r);
 			window.alert(sfid);
+			return sfid;
 		}	
 	</script> 
 </head>
 
-<body onload="captureID();">
+<body>
 
-<input type=hidden name="Campaign_ID" value=sfid>	
+	
 
 <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
@@ -45,8 +46,8 @@
 
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-<label for="Campaign_ID">Campaign</label>
-<select  id="Campaign_ID" name="Campaign_ID">
+<label for="Campaign_ID">Campaign</label value=>
+<select  id="Campaign_ID" name="Campaign_ID" onload="captureID();">
 <option value="">--None--</option>
 <option value="701i0000001aLoK">Web Ads 2017</option>
 <option value="701i0000001aLoP">Partner Web Referral 2017</option>
