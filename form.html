@@ -1,6 +1,8 @@
 <html>
 <head>
         <script language="javascript">
+        window.onload = captureID();
+        
 		function captureID() {
 			var str = window.location.toString();
 			window.alert(str);
@@ -11,7 +13,7 @@
 	</script> 
 </head>
 
-<body  onLoad="captureID()">
+<body>
 
 <input type=hidden name="Campaign_ID" value=id>	
 
