@@ -3,11 +3,8 @@
         <script language="javascript" type="text/javascript">
 		function captureID() {
 			var str = window.location.href;
-			window.alert(str);
 			var l = str.indexOf('=')+1;
-			window.alert(l.toString());
 			var r = str.indexOf('=')+16;
-			window.alert(r.toString());
 			var sfid = str.substring(l, r);
 			window.alert(sfid);
 		}	
