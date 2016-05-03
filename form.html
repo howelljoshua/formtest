@@ -1,5 +1,5 @@
 <html>
-<head>
+<head onLoad="captureID()">
         <script language="javascript">
 		function captureID() {
 			var str = window.location.toString();
@@ -11,7 +11,7 @@
 	</script> 
 </head>
 
-<body onLoad="captureID()">
+<body>
 
 <input type=hidden name="Campaign_ID" value=id>	
 
