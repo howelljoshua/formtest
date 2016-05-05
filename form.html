@@ -6,20 +6,20 @@
 			var l = str.indexOf('=')+1;
 			var r = str.indexOf('=')+16;
 			var sfid = str.substring(l, r);
-			document.getElementByName("Campaign_ID").value="701i0000001aLoP";
+
 			window.alert(sfid);
 		}
 		
 	</script> 
 </head>
 
-<body>
+<body onLoad='captureID();'>
 
 <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00Di0000000gp1n">
 
-<input type="hidden" name="Campaign_ID" onLoad='captureID();'>
+<input type="hidden" name="Campaign_ID" >
            
 
 <input type=hidden name="retURL" value="http://howelljoshua.github.io/formtest/ThankYouRedirect.html">
