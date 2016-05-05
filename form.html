@@ -6,7 +6,7 @@
 			var l = str.indexOf('=')+1;
 			var r = str.indexOf('=')+16;
 			var sfid = str.substring(l, r);	
-			
+			document.getElementById('Campaign_ID').value = sfid;
 			window.alert(sfid);
 		}
 		
@@ -19,7 +19,7 @@
 
 <input type=hidden name="oid" value="00Di0000000gp1n">
 
-<input type="hidden" name="Campaign_ID" value="">
+<input type="hidden" id="Campaign_ID" name="Campaign_ID">
 
 <input type=hidden name="retURL" value="http://howelljoshua.github.io/formtest/ThankYouRedirect.html">
 
